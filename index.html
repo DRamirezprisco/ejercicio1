@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrossFit Girls</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: black;
+      }
+
+      .encabezado {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+      }
+      .link {
+        color: #af9352;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration-line: none;
+        align-content: center;
+        align-items: center;
+      }
+      .titllepp {
+        font-size: 40px;
+        color: #af9352;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-self: center;
+        padding: 10px;
+      }
+      .subtitel {
+        font-size: 35px;
+        color: #7c5c10;
+        width: 500px;
+      }
+      .parrafos {
+        font-size: 28px;
+        color: white;
+        width: 500px;
+      }
+      .hero {
+        background: url(https://www.boldtribe.com/cdn/shop/articles/Por_Que_Las_CrossFit_Girls_Son_Tan_Fuertes_y_Decididas_1152x.jpg?v=1502297033)
+          no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 800px;
+        position: relative;
+
+        div {
+          position: absolute;
+          top: 200px;
+          right: 400px;
+        }
+      }
+      .bloque {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .formulario {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        align-items: stretch;
+        gap: 10px;
+        margin: 20px auto;
+
+        input {
+          padding: 10px;
+        }
+        label {
+          color: white;
+          font-size: 20px;
+        }
+        textarea {
+          height: 200px;
+        }
+        button {
+          padding: 10px;
+          width: 150px;
+          margin: 0 auto;
+          background: #af9352;
+          color: #443208;
+          font-weight: 800;
+          border: none;
+          border-radius: 8px;
+        }
+        button:hover {
+          background: #946904;
+          cursor: pointer;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="encabezado">
+        <img
+          src="https://cloud-1de12d.b-cdn.net/media/iW=65&iH=81&oX=0&oY=0&cW=65&cH=81/8680abb514ad63c1db6961a93a958cb6/Logo.png"
+          alt="Logo Crossfit aguila"
+          title="Logo de CrossFit aguila"
+          height="80px"
+        />
+        <a class="link" href="#NOSOTROS">NOSOTROS </a>
+        <a class="link" href="#CONTACTANOS">CONTACTANOS </a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <h1 class="titllepp">CROSSFIT GIRLS BOGOTÁ</h1>
+          <p class="parrafos">
+            Desde 2008, hemos transformado la vida de miles de personas,
+            ayudándoles a alcanzar su mejor versión física mientras promovemos
+            un estilo de vida saludable y equilibrado.
+          </p>
+          <p class="parrafos">
+            Únete a nuestra familia y descubre cómo superar tus límites puede
+            ser la mejor decisión de tu vida.
+          </p>
+        </div>
+      </section>
+      <section id="NOSOTROS">
+        <h2 class="titllepp">NOSOTROS</h2>
+        <article class="bloque">
+          <div>
+            <h3 class="subtitel">
+              Con el respaldo de entrenadores certificados por CrossFit HQ,
+            </h3>
+            <p class="parrafos">
+              Aquí no solo entrenas, ¡te conviertes en parte de una comunidad
+              que te inspira a dar lo mejor de ti cada día!
+            </p>
+            <p class="parrafos">
+              El primer paso hacia tus metas comienza aquí.
+            </p>
+          </div>
+          <img
+            src="https://www.shutterstock.com/image-photo/muscular-crossfit-fitness-girl-lifting-600nw-1581121021.jpg"
+            alt="Mujer levantando pesas"
+            title="Mujer levantando pesas"
+            height="500px"
+          />
+        </article>
+      </section>
+      <section id="CONTACTANOS">
+        <h1 class="titllepp">CONTACTANOS</h1>
+        <form class="formulario">
+          <label for="Nombre">Nombre</label>
+          <input
+            name="nombre"
+            type="text"
+            id="Nombre"
+            placeholder="Daniela Ramirez"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="tu_email@gmail.com"
+            required
+          />
+
+          <label for="comentario">Escribe tus comentarios</label>
+          <textarea name="comentario" id="comentario"></textarea>
+
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
